@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Noto+Sans:wght@100;400;700&display=swap" rel="stylesheet" /> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="./assets/css/main.css" />
-        <link rel="icon" href="./assets/img/favicon.png" />
-        <title>home</title>
-    </head>
-    <body class="homepage">
-        <header>
-            <nav class="navigation">
-                <a href="./index.html">home</a>
-                <a href="./about.html">about</a>
-                <a href="./contact.html">contact</a>
-            </nav>
-        </header>
-        <h1><i class="bi bi-apple"></i> home</h1>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <title>home</title>
+  </head>
+  <body class="homepage">
+    <header>
+      <nav class="navigation">
+        <a href="./index.html">home</a>
+        <a href="./about.html">about</a>
+        <a href="./contact.html">contact</a>
+      </nav>
+    </header>
+    <h1><i class="bi bi-apple"></i> home</h1>
+    <main class="container">
+    <form class="contact-form">
+        <label for="">name</label>
+        <input type="text" placeholder="name"/>
+        <label for="">password</label>
+        <input type="text" placeholder="password"/>
+        <label for="">comment</label>
+        <textarea></textarea>
+        <input type="submit" value="submit">
+    </form>
 
-        <main class="container">
-            <section class="transform">
-                <div class="box"></div>
-            </section>
-        </main>
-    </body>
+
+      <form  action="#" method="">
+        <!-- http://127.0.0.1:5500/index.html?username=behshad&email="myemail@email.com" -->
+        <label for="username">username</label>
+        <input disabled type="text" name="username" id="username" />
+
+        <br />
+
+        <label
+          >username
+          <input required type="text" />
+        </label>
+
+        <fieldset>
+            <legend>login form</legend>
+          <label
+            >name
+            <input type="text" placeholder="firstname"/>
+          </label>
+          <br>
+          <label>
+            email
+            <input type="email" placeholder="email address" name="email/>
+          </label>
+        </fieldset>
+
+        <br />
+        <input type="password" name="password" />
+        <input type="color" name="colour" />
+        <input type="email" />
+        <input type="range" />
+        <input type="time" />
+        <input type="date" />
+        <input type="datetime-local" />
+        <input type="number" />
+        <input type="week" />
+        <input type="tel" />
+        <br />
+        <textarea name="comment" cols="30" rows="15"></textarea>
+        <hr />
+        <input type="radio" name="day" value="friday" /> friday <input type="radio" name="day" value="saturday" /> saturday <input type="radio" name="day" value="sunday" /> sunday
+        <hr />
+        <input type="checkbox" name="day" value="friday" /> friday <input type="checkbox" name="day" value="saturday" /> saturday <input type="checkbox" name="day" value="sunday" /> sunday
+        <hr />
+        <select name="fruit">
+          <option value="apple">apple</option>
+          <option value="orange">orange</option>
+          <option value="kiwifruit">kiwi</option>
+        </select>
+        <input type="hidden" name="tracking-code" value="abc-123" />
+        <input type="file" />
+
+        <input type="submit" value="go" />
+      </form>
+    </main>
+  </body>
 </html>
