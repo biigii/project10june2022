@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Noto+Sans:wght@100;400;700&display=swap';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
 @import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css';
 @import './global.css';
 @import './layout.css';
 @import './components.css';
